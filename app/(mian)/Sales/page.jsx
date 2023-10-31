@@ -10,7 +10,7 @@ const page = () => {
                         <p className="font-semibold">المبيعات</p>
                         <input type="date" />
                     </div>
-                    <div>
+                    <div className="sm:block hidden">
                         <Search placeholder="ابحث عن فاتوره محدده" />
                     </div>
                 </div>
