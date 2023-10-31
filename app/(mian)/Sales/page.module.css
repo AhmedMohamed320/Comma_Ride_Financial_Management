@@ -11,6 +11,8 @@
     color: var(--color-light-2);
     padding: 0.1rem 0.5rem;
     border-radius: 0.5rem;
+    outline: none;
+    border: none;
 }
 
 .filter {
