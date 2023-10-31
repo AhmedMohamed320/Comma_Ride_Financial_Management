@@ -39,16 +39,52 @@ const Aside = (props) => {
                             حسابي
                         </Link>
                     </li>
+                    <li className={pathname == "/" && classes.active}>
+                        <span className={classes.border}></span>
+                        <Link
+                            href={{
+                                pathname: "/",
+                            }}
+                            onClick={props.onHideAside}
+                        >
+                            <FaFileInvoiceDollar />
+                            الأصول
+                        </Link>
+                    </li>
                     <li className={pathname == "/Sales" && classes.active}>
                         <span className={classes.border}></span>
                         <Link
                             href={{
-                                pathname: "/Orders",
+                                pathname: "/Sales",
                             }}
                             onClick={props.onHideAside}
                         >
                             <FaFileInvoiceDollar />
                             المبيعات
+                        </Link>
+                    </li>
+                    <li className={pathname == "/" && classes.active}>
+                        <span className={classes.border}></span>
+                        <Link
+                            href={{
+                                pathname: "/",
+                            }}
+                            onClick={props.onHideAside}
+                        >
+                            <FaFileInvoiceDollar />
+                            المصروفات
+                        </Link>
+                    </li>
+                    <li className={pathname == "/" && classes.active}>
+                        <span className={classes.border}></span>
+                        <Link
+                            href={{
+                                pathname: "/",
+                            }}
+                            onClick={props.onHideAside}
+                        >
+                            <FaFileInvoiceDollar />
+                            المدفوعات
                         </Link>
                     </li>
                 </ul>
