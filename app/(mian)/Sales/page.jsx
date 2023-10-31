@@ -8,7 +8,6 @@ const page = () => {
                 <div className={classes.head}>
                     <div className="flex items-center gap-2">
                         <p className="font-semibold">المبيعات</p>
-                        <span className="text-2xl">95</span>
                         <input type="date" />
                     </div>
                     <div>
