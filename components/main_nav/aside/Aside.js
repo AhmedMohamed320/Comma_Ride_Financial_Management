@@ -40,11 +40,11 @@ const Aside = (props) => {
                             حسابي
                         </Link>
                     </li>
-                    <li className={pathname == "/" ? classes.active:""}>
+                    <li className={pathname == "/Assets" ? classes.active:""}>
                         <span className={classes.border}></span>
                         <Link
                             href={{
-                                pathname: "/",
+                                pathname: "/Assets",
                             }}
                             onClick={props.onHideAside}
                         >

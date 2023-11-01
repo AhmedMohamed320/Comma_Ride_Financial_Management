@@ -35,7 +35,7 @@ const Nav = (props) => {
                 <div className={classes.list}>
                     <ul className="md:flex hidden items-center gap-12">
                         <li>
-                            <Link href="/">الأصول</Link>
+                            <Link href="/Assets">الأصول</Link>
                         </li>
                         <li>
                             <Link href="/">المدفوعات</Link>
