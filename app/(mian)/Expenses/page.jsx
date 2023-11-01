@@ -2,10 +2,8 @@
 import React from "react";
 import classes from "./page.module.css";
 import Link from "next/link";
+import Main from "@/components/Expenses/Main";
 import { useSearchParams } from "next/navigation";
-import Operational from "@/components/Expenses/operational/Operational";
-import Sundry from "@/components/Expenses/sundry/Sundry";
-import Advertising from "@/components/Expenses/advertising/Advertising";
 
 const page = () => {
     const router = useSearchParams();
@@ -54,9 +52,7 @@ const page = () => {
                     </li>
                 </ul>
             </div>
-            {content == "operational" && <Operational />}
-            {content == "sundry" && <Sundry />}
-            {content == "advertising" && <Advertising />}
+            <Main />
         </section>
     );
 };
