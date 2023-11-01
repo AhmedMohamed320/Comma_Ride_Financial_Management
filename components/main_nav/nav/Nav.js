@@ -33,7 +33,7 @@ const Nav = (props) => {
                     <img src="/image/ride_logo_1.png" alt="ride_logo" />
                 </Link>
                 <div className={classes.list}>
-                    <ul className="md:flex hidden items-center gap-8">
+                    <ul className="md:flex hidden items-center gap-12">
                         <li>
                             <Link href="/">الأصول</Link>
                         </li>
@@ -41,7 +41,7 @@ const Nav = (props) => {
                             <Link href="/">المدفوعات</Link>
                         </li>
                         <li>
-                            <Link href="/">المصروفات</Link>
+                            <Link href="/Expenses">المصروفات</Link>
                         </li>
                         <li>
                             <Link href="/Sales">المبيعات</Link>
