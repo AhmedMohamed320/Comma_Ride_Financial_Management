@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
 import classes from "./Aside.module.css";
-import { MdCreate, MdOutlineClose } from "react-icons/md";
+import { MdOutlineClose } from "react-icons/md";
 import { BsPersonFill } from "react-icons/bs";
 import { BiLogOut } from "react-icons/bi";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaFileInvoiceDollar } from "react-icons/fa6";
+import { GiExpense } from "react-icons/gi";
 
 const Aside = (props) => {
     const pathname = usePathname();
@@ -27,7 +28,7 @@ const Aside = (props) => {
                     </Link>
                 </div>
                 <ul className="flex gap-8 flex-col">
-                    <li className={pathname == "/info" && classes.active}>
+                    <li className={pathname == "/info" ? classes.active:""}>
                         <span className={classes.border}></span>
                         <Link
                             href={{
@@ -39,7 +40,7 @@ const Aside = (props) => {
                             حسابي
                         </Link>
                     </li>
-                    <li className={pathname == "/" && classes.active}>
+                    <li className={pathname == "/" ? classes.active:""}>
                         <span className={classes.border}></span>
                         <Link
                             href={{
@@ -51,7 +52,7 @@ const Aside = (props) => {
                             الأصول
                         </Link>
                     </li>
-                    <li className={pathname == "/Sales" && classes.active}>
+                    <li className={pathname == "/Sales" ? classes.active:""}>
                         <span className={classes.border}></span>
                         <Link
                             href={{
@@ -63,19 +64,19 @@ const Aside = (props) => {
                             المبيعات
                         </Link>
                     </li>
-                    <li className={pathname == "/" && classes.active}>
+                    <li className={pathname == "/Expenses" ? classes.active:""}>
                         <span className={classes.border}></span>
                         <Link
                             href={{
-                                pathname: "/",
+                                pathname: "/Expenses",
                             }}
                             onClick={props.onHideAside}
                         >
-                            <FaFileInvoiceDollar />
+                            <GiExpense />
                             المصروفات
                         </Link>
                     </li>
-                    <li className={pathname == "/" && classes.active}>
+                    <li className={pathname == "/" ? classes.active:""}>
                         <span className={classes.border}></span>
                         <Link
                             href={{
