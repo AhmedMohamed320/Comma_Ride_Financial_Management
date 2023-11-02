@@ -87,18 +87,6 @@ const page = () => {
                                 <tr>
                                     <td>
                                         <p>9/10</p>
-                                        <p className="text-xl">09:30</p>
-                                    </td>
-                                    <td>
-                                        <p>تحصيل</p>
-                                    </td>
-                                    <td>
-                                        <p>+200</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>9/10</p>
                                         <p className="text-xl">11:30</p>
                                     </td>
                                     <td>
@@ -142,6 +130,18 @@ const page = () => {
                                     </td>
                                     <td>
                                         <p>-200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>مرتب</p>
+                                    </td>
+                                    <td>
+                                        <p>-2000</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -182,13 +182,13 @@ const page = () => {
                                 <tr>
                                     <td>
                                         <p>9/10</p>
-                                        <p className="text-xl">11:30</p>
+                                        <p className="text-xl">09:30</p>
                                     </td>
                                     <td>
-                                        <p>ايجار</p>
+                                        <p>تحصيل</p>
                                     </td>
                                     <td>
-                                        <p>-3000</p>
+                                        <p>+200</p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -197,22 +197,10 @@ const page = () => {
                                         <p className="text-xl">09:30</p>
                                     </td>
                                     <td>
-                                        <p>مرتب</p>
+                                        <p>تحصيل</p>
                                     </td>
                                     <td>
-                                        <p>-2000</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>9/10</p>
-                                        <p className="text-xl">09:30</p>
-                                    </td>
-                                    <td>
-                                        <p>مرتب</p>
-                                    </td>
-                                    <td>
-                                        <p>-2000</p>
+                                        <p>+200</p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -221,10 +209,22 @@ const page = () => {
                                         <p className="text-xl">09:30</p>
                                     </td>
                                     <td>
-                                        <p>اعلانات</p>
+                                        <p>تحصيل</p>
                                     </td>
                                     <td>
-                                        <p>-200</p>
+                                        <p>+200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>تحصيل</p>
+                                    </td>
+                                    <td>
+                                        <p>+200</p>
                                     </td>
                                 </tr>
                             </tbody>
