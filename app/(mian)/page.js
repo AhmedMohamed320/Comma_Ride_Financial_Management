@@ -4,10 +4,16 @@ import { GiTakeMyMoney } from "react-icons/gi";
 import { BiCoinStack, BiWallet } from "react-icons/bi";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
 import LineChart from "@/components/UI/chart/LineChart";
+import Link from "next/link";
 const page = () => {
     return (
         <section className="mainContainer py-4 flex flex-col gap-4">
-            <p className="text-4xl font-semibold">الأصول</p>
+            <div
+                className={`flex items-center justify-between ${classes.head}`}
+            >
+                <p className="text-4xl font-semibold">الأصول</p>
+                <Link href="/Capital">رؤس الاموال</Link>
+            </div>
             <div className={classes.static}>
                 <div>
                     <div>
