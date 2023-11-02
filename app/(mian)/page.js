@@ -3,6 +3,7 @@ import classes from "./Home.module.css";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { BiCoinStack, BiWallet } from "react-icons/bi";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
+import LineChart from "@/components/UI/chart/LineChart";
 const page = () => {
     return (
         <section className="mainContainer py-4 flex flex-col gap-4">
@@ -67,77 +68,171 @@ const page = () => {
                 </div>
             </div>
             <div className={classes.part2}>
-                <div className={classes.Treasury_movements}>
-                    <p className="text-center text-2xl font-semibold">اخر التحركات على الخزنه</p>
-                    <table className={classes.table}>
-                        <tbody>
-                            <tr className={classes.head}>
-                                <td>التوقيت</td>
-                                <td>الوصف</td>
-                                <td>القيمه</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>9/10</p>
-                                    <p className="text-xl">09:30</p>
-                                </td>
-                                <td>
-                                    <p>تحصيل</p>
-                                </td>
-                                <td>
-                                    <p>+200</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>9/10</p>
-                                    <p className="text-xl">11:30</p>
-                                </td>
-                                <td>
-                                    <p>ايجار</p>
-                                </td>
-                                <td>
-                                    <p>-3000</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>9/10</p>
-                                    <p className="text-xl">09:30</p>
-                                </td>
-                                <td>
-                                    <p>مرتب</p>
-                                </td>
-                                <td>
-                                    <p>-2000</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>9/10</p>
-                                    <p className="text-xl">09:30</p>
-                                </td>
-                                <td>
-                                    <p>مرتب</p>
-                                </td>
-                                <td>
-                                    <p>-2000</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>9/10</p>
-                                    <p className="text-xl">09:30</p>
-                                </td>
-                                <td>
-                                    <p>اعلانات</p>
-                                </td>
-                                <td>
-                                    <p>-200</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div>
+                    <div className={classes.title}>
+                        <p>الخارج</p>
+                        <select name="" id="">
+                            <option value="">اخر 7 ايام</option>
+                            <option value="">اخر 12 اسبوع</option>
+                        </select>
+                    </div>
+                    <div className={classes.Income}>
+                        <table className={classes.table}>
+                            <tbody>
+                                <tr className={classes.head}>
+                                    <td>التوقيت</td>
+                                    <td>الوصف</td>
+                                    <td>القيمه</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>تحصيل</p>
+                                    </td>
+                                    <td>
+                                        <p>+200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">11:30</p>
+                                    </td>
+                                    <td>
+                                        <p>ايجار</p>
+                                    </td>
+                                    <td>
+                                        <p>-3000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>مرتب</p>
+                                    </td>
+                                    <td>
+                                        <p>-2000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>مرتب</p>
+                                    </td>
+                                    <td>
+                                        <p>-2000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>اعلانات</p>
+                                    </td>
+                                    <td>
+                                        <p>-200</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div className={classes.chart}>
+                            <LineChart />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className={classes.title}>
+                        <p>الداخل</p>
+                        <select name="" id="">
+                            <option value="">اخر 7 ايام</option>
+                            <option value="">اخر 12 اسبوع</option>
+                        </select>
+                    </div>
+                    <div className={classes.outside}>
+                        <table className={classes.table}>
+                            <tbody>
+                                <tr className={classes.head}>
+                                    <td>التوقيت</td>
+                                    <td>الوصف</td>
+                                    <td>القيمه</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>تحصيل</p>
+                                    </td>
+                                    <td>
+                                        <p>+200</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">11:30</p>
+                                    </td>
+                                    <td>
+                                        <p>ايجار</p>
+                                    </td>
+                                    <td>
+                                        <p>-3000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>مرتب</p>
+                                    </td>
+                                    <td>
+                                        <p>-2000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>مرتب</p>
+                                    </td>
+                                    <td>
+                                        <p>-2000</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>9/10</p>
+                                        <p className="text-xl">09:30</p>
+                                    </td>
+                                    <td>
+                                        <p>اعلانات</p>
+                                    </td>
+                                    <td>
+                                        <p>-200</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div className={classes.chart}>
+                            <LineChart />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

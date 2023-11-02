@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import classes from "./LineChart.module.css";
 import {
@@ -11,8 +12,8 @@ import {
     Filler,
     Legend,
 } from "chart.js";
-import { Line } from "react-chartjs-2";
 import faker from "faker";
+import { Line } from "react-chartjs-2";
 
 ChartJS.register(
     CategoryScale,
@@ -37,6 +38,18 @@ export const LineChart = (props) => {
                 text: "Chart.js Line Chart",
             },
         },
+        scales: {
+            x: {
+                grid: {
+                    display: false, // Hide x-axis gridlines
+                },
+            },
+            y: {
+                grid: {
+                    display: false, // Hide y-axis gridlines
+                },
+            },
+        },
     };
     const labels = ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10"];
     const data = {
@@ -57,13 +70,6 @@ export const LineChart = (props) => {
     return (
         <>
             <div className={classes.chart}>
-                <div className={classes.title}>
-                    <p>{props.title}</p>
-                    <select name="" id="">
-                        <option value="">اخر 7 ايام</option>
-                        <option value="">اخر 12 اسبوع</option>
-                    </select>
-                </div>
                 <Line options={options} data={data} />
             </div>
         </>

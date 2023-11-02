@@ -37,9 +37,17 @@
 }
 
 /* --------------------- */
-.part2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+.part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.part2>div {
+    border: 1px solid var(--color-dark-7);
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .table {
@@ -57,7 +65,7 @@
 
 .table tr {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
@@ -80,12 +88,57 @@
 }
 
 /* --------------------- */
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-dark-4);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.title select {
+    background-color: var(--color-dark-6);
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--color-light-2);
+}
+
+/* --------------------- */
+
+.Income,
+.outside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* --------------------- */
 @media (max-width:55rem) {
     .static {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .part2{
+    .part2 {
+        grid-template-columns: 1fr;
+    }
+
+    .Income,
+    .outside {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media (max-width:45rem) {
+    .title{
+        justify-content:center ;
+    }
+    .Income,
+    .outside {
         grid-template-columns: 1fr;
     }
 }
