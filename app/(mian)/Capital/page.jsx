@@ -4,7 +4,7 @@ import LineChart from "@/components/UI/chart/LineChart";
 const page = () => {
     return (
         <section className="mainContainer  py-4 flex flex-col gap-4">
-            <p className="text-4xl font-semibold">رؤس الاموال</p>
+            <p className="text-4xl font-semibold">رؤوس الاموال</p>
             <div className={classes.part2}>
                 <div>
                     <div className={classes.title}>
@@ -91,7 +91,15 @@ const page = () => {
                 </div>
             </div>
             <div className={classes.formAdd}>
-
+                <div>
+                    <label htmlFor="">اسم المستثمر</label>
+                    <input type="text" placeholder="ادخل اسم المستثمر" />
+                </div>
+                <div>
+                    <label htmlFor="">قيمه الاستثمار</label>
+                    <input type="text" placeholder="ادخل قيمه الاستثمار" />
+                </div>
+                <button>اضافه</button>
             </div>
         </section>
     );

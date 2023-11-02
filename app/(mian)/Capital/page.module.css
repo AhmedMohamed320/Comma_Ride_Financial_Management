@@ -4,7 +4,8 @@
     gap: 1rem;
 }
 
-.part2>div {
+.part2>div,
+.formAdd {
     border: 1px solid var(--color-dark-7);
     padding: 1rem;
     border-radius: 0.5rem;
@@ -69,6 +70,36 @@
 }
 
 /* --------------------- */
+
+.formAdd {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    align-items: flex-end;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+
+.formAdd>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.formAdd>div input{
+    border: 1px solid var(--color-dark-7);
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+
+.formAdd button{
+    background-color: var(--color-red-1);
+    outline: none;
+    color: var(--color-light-2);
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
 
 .Income {
     display: grid;
