@@ -11,7 +11,7 @@ const page = () => {
             <div
                 className={`flex items-center justify-between ${classes.head}`}
             >
-                <p className="text-4xl font-semibold">الأصول</p>
+                <p className="text-4xl font-semibold">الخزنه</p>
                 <Link href="/Capital">رؤوس الاموال</Link>
             </div>
             <div className={classes.static}>

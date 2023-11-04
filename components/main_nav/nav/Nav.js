@@ -33,12 +33,12 @@ const Nav = (props) => {
                     <img src="/image/ride_logo_1.png" alt="ride_logo" />
                 </Link>
                 <div className={classes.list}>
-                    <ul className="md:flex hidden items-center gap-12">
+                    <ul className="md:flex hidden items-center gap-8">
                         <li>
-                            <Link href="/">الأصول</Link>
+                            <Link href="/">الخزنه</Link>
                         </li>
                         <li>
-                            <Link href="/">المدفوعات</Link>
+                            <Link href="/Payments">المدفوعات</Link>
                         </li>
                         <li>
                             <Link href="/Expenses">المصروفات</Link>
@@ -46,17 +46,16 @@ const Nav = (props) => {
                         <li>
                             <Link href="/Sales">المبيعات</Link>
                         </li>
+                        <li>
+                            <Link href="/Assets">الأصول</Link>
+                        </li>
+                        <li>
+                            <Link href="/Our_employees">موظفينا</Link>
+                        </li>
                     </ul>
                 </div>
                 <div className={`md:flex hidden ${classes.btn}`}>
-                    <div className="flex gap-4 items-center">
-                        <Link href="/User_Profile">
-                            <span className="text-2xl text-zinc-50">
-                                احمد محمد
-                            </span>
-                        </Link>
-                        <Link href="/sign_in">تسجيل الخروج</Link>
-                    </div>
+                    <Link href="/sign_in">تسجيل الخروج</Link>
                 </div>
                 <div className={`md:hidden`}>
                     <BsListNested

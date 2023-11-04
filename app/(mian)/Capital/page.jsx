@@ -4,11 +4,11 @@ import LineChart from "@/components/UI/chart/LineChart";
 const page = () => {
     return (
         <section className="mainContainer  py-4 flex flex-col gap-4">
-            <p className="text-4xl font-semibold">رؤوس الاموال</p>
+            <p className="text-4xl font-semibold">رأس المال</p>
             <div className={classes.part2}>
                 <div>
                     <div className={classes.title}>
-                        <p>المضاف الى الخزنه</p>
+                        <p>تحركات رؤوس الأموال</p>
                         <select name="" id="">
                             <option value="">اخر 12 اشهر</option>
                             <option value="">اخر 12 اسبوع</option>
@@ -43,7 +43,7 @@ const page = () => {
                                         <p>محمد على</p>
                                     </td>
                                     <td>
-                                        <p>3000</p>
+                                        <p>-3000</p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -92,14 +92,14 @@ const page = () => {
             </div>
             <div className={classes.formAdd}>
                 <div>
-                    <label htmlFor="">اسم المستثمر</label>
-                    <input type="text" placeholder="ادخل اسم المستثمر" />
+                    <label htmlFor="">ب اسم</label>
+                    <input type="text" placeholder="ادخل الاسم " />
                 </div>
                 <div>
-                    <label htmlFor="">قيمه الاستثمار</label>
-                    <input type="text" placeholder="ادخل قيمه الاستثمار" />
+                    <label htmlFor="">القيمه</label>
+                    <input type="text" placeholder="ادخل القيمه " />
                 </div>
-                <button>اضافه</button>
+                <button>تاكيد</button>
             </div>
         </section>
     );

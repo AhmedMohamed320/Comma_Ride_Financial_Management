@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import classes from "./Aside.module.css";
-import { MdOutlineClose } from "react-icons/md";
-import { BsPersonFill } from "react-icons/bs";
+import { MdChair, MdOutlineClose } from "react-icons/md";
 import { BiLogOut } from "react-icons/bi";
+import { ImTree } from "react-icons/im";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaFileInvoiceDollar } from "react-icons/fa6";
-import { GiExpense } from "react-icons/gi";
+import { FaFileInvoiceDollar, FaPeopleGroup } from "react-icons/fa6";
+import { GiStrongbox } from "react-icons/gi";
 
 const Aside = (props) => {
     const pathname = usePathname();
@@ -28,19 +28,7 @@ const Aside = (props) => {
                     </Link>
                 </div>
                 <ul className="flex gap-8 flex-col">
-                    <li className={pathname == "/info" ? classes.active:""}>
-                        <span className={classes.border}></span>
-                        <Link
-                            href={{
-                                pathname: "/User_Profile",
-                            }}
-                            onClick={props.onHideAside}
-                        >
-                            <BsPersonFill />
-                            حسابي
-                        </Link>
-                    </li>
-                    <li className={pathname == "/" ? classes.active:""}>
+                    <li className={pathname == "/" ? classes.active : ""}>
                         <span className={classes.border}></span>
                         <Link
                             href={{
@@ -48,11 +36,11 @@ const Aside = (props) => {
                             }}
                             onClick={props.onHideAside}
                         >
-                            <FaFileInvoiceDollar />
-                            الأصول
+                            <GiStrongbox />
+                            الخزنه
                         </Link>
                     </li>
-                    <li className={pathname == "/Sales" ? classes.active:""}>
+                    <li className={pathname == "/Sales" ? classes.active : ""}>
                         <span className={classes.border}></span>
                         <Link
                             href={{
@@ -64,7 +52,11 @@ const Aside = (props) => {
                             المبيعات
                         </Link>
                     </li>
-                    <li className={pathname == "/Expenses" ? classes.active:""}>
+                    <li
+                        className={
+                            pathname == "/Expenses" ? classes.active : ""
+                        }
+                    >
                         <span className={classes.border}></span>
                         <Link
                             href={{
@@ -72,20 +64,52 @@ const Aside = (props) => {
                             }}
                             onClick={props.onHideAside}
                         >
-                            <GiExpense />
+                            <ImTree />
                             المصروفات
                         </Link>
                     </li>
-                    <li className={pathname == "/" ? classes.active:""}>
+                    <li
+                        className={
+                            pathname == "/Payments" ? classes.active : ""
+                        }
+                    >
                         <span className={classes.border}></span>
                         <Link
                             href={{
-                                pathname: "/",
+                                pathname: "/Payments",
                             }}
                             onClick={props.onHideAside}
                         >
-                            <FaFileInvoiceDollar />
+                            <ImTree />
                             المدفوعات
+                        </Link>
+                    </li>
+                    <li className={pathname == "/Assets" ? classes.active : ""}>
+                        <span className={classes.border}></span>
+                        <Link
+                            href={{
+                                pathname: "/Assets",
+                            }}
+                            onClick={props.onHideAside}
+                        >
+                            <MdChair />
+                            الأصول
+                        </Link>
+                    </li>
+                    <li
+                        className={
+                            pathname == "/Our_employees" ? classes.active : ""
+                        }
+                    >
+                        <span className={classes.border}></span>
+                        <Link
+                            href={{
+                                pathname: "/Our_employees",
+                            }}
+                            onClick={props.onHideAside}
+                        >
+                            <FaPeopleGroup />
+                            موظفينا
                         </Link>
                     </li>
                 </ul>
