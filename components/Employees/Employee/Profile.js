@@ -48,7 +48,10 @@ const Profile = () => {
                         </p>
                     </div>
                     <div className={classes.dues}>
-                        <p className="pb-4">المستحقات الشهريه</p>
+                        <p className="pb-4">
+                            
+                            المستحقات الشهريه المصروفه
+                        </p>
                         <table className={classes.table}>
                             <tbody>
                                 <tr className={classes.head}>

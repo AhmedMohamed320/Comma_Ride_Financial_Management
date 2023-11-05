@@ -41,7 +41,7 @@ const Main = () => {
                                 query: { content: "Order_statistics" },
                             }}
                         >
-                            احصائيات الاوردارت
+                            الأحصائيات الاسبوعيه 
                         </Link>
                     </li>
                     <li

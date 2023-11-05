@@ -73,39 +73,6 @@ const Profile = () => {
                         ملاحظات : <span>لا يوجد اي ملاحظات</span>
                     </p>
                 </div>
-                <div className={classes.dues}>
-                    <p className="pb-4">المستحقات الاسبوعيه</p>
-                    <table className={classes.table}>
-                        <tbody>
-                            <tr className={classes.head}>
-                                <td>التوقيت</td>
-                                <td>الخصم</td>
-                                <td>بعد الخصم</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>7/10</p>
-                                </td>
-                                <td>50</td>
-                                <td>950</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>7/10</p>
-                                </td>
-                                <td>50</td>
-                                <td>950</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>7/10</p>
-                                </td>
-                                <td>50</td>
-                                <td>950</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
             </div>
             <div className={classes.charts}>
                 <div className={classes.chart}>

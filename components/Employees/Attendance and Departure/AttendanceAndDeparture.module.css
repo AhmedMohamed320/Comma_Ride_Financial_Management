@@ -34,7 +34,6 @@
 .month .head {
     font-size: 1.5rem;
     background-color: var(--color-dark-6);
-    font-weight: 600;
     color: var(--color-light-2);
     display: flex;
     justify-content: center;
